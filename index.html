@@ -1,0 +1,604 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PROYECTO FINAL</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--grupo CSS-->
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>-->
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/tema-app10.min.css">
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine3/style.css" />
+<script type="text/javascript" src="engine3/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body onLoad="MM_preloadImages('imagenes_cbtis/vision.jpg','imagenes_cbtis/instelecticidad.jpg','imagenes_cbtis/mecanicosinsta.jpg','imagenes_cbtis/1.jpg','imagenes_cbtis/instprogramacion.jpg','imagenes_cbtis/cbtis16.png')">
+  
+  <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Centro de Bachilleratos Tecnico industial y de servicios No. 16</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+
+
+  </div>
+ <div>
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>¿Que es DGETI?</h2>
+    </a>
+   </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Especialidades</h2>
+    </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Actividades extra excolares</h2>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Plan de estudios</h2>
+     </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Instalaciones</h2>
+       </a>
+   </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>ubicacion</h2>
+     </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Perfil de egreso general</h2>
+     </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Eventos</h2>
+     </a>
+     </li>
+   </ul>
+ </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/mdpi.png" width="70" height="65">
+   </div>
+   <div>
+    <h4>Proyecto final</h4>
+    <h4>María Guadalupe Moreno Cruz</h4>
+   </div>
+  </div>
+  </div>
+ </div>
+ <div data-role="page" id="Pagina" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>¿Que es DGETI?</h1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <p>La Dirección General de Educación Tecnológica Industrial (DGETI) es una dependencia adscrita a la Subsecretaría de Educación Media Superior (SEMS) que ofrece el servicio educativo de nivel medio superior tecnológico.
+
+Actualmente, la DGETI es la institución de educación media superior tecnológica más grande del país, con una infraestructura física de 1,366 Centros  Educativos a Nivel Nacional, de los cuales, 168 son Centros de Estudios Tecnológico Industriales y de Servicios (CETIS) y 271 Centros de Bachillerato Tecnológico Industrial y de Servicios (CBTIS).  
+
+Además, ha promovido la creación de al menos 288 Centros de Estudios Científicos y Tecnológicos en los Estados (CECYTES), que operan bajo un sistema descentralizado.</p>
+       </div>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes_cbtis/cbtis16.png',1)"><img src="imagenes_cbtis/dgeti.jpg" width="80%" id="Image20"></a> </div>
+       <div style="width:40%;" align="center">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+        <li class="ui-first-child ui-last-child">
+          <a href="http://www.dgeti.sep.gob.mx/"target="_self" data-role="button">
+            <h2>Mas...</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+          <a href="https://es.wikipedia.org/wiki/Centro_de_Bachillerato_Tecnol%C3%B3gico_Industrial_y_de_Servicios"target="_self" data-role="button">
+            <h2>Mas...</h2>
+          </a>
+        </li>
+      </ul>
+      </div>
+      </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Proyecto final, MGMC</h4>
+        </div>
+      </div>
+     </div>
+     </div>
+   <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>Especialidades</h1>
+     </div>
+     <div data-role="content" align="center">
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes_cbtis/instelecticidad.jpg',1)"><img src="imagenes_cbtis/electicidad.jpg" width="80%" id="Image16"></a>
+<div data-role="collapsible" data-content-theme="false"  style="background-color:#06C;">
+      <h2>TÉCNICO EN ELECTRICIDAD</h2>
+<div><p>
+La carrera de Técnico en Electricidad permite al estudiante sustentar la demanda de ocupación de Técnicos Electricistas en el sector productivo y de servicios, capaz de diseñar y realizar instalaciones eléctricas residenciales y comerciales, así como proporcionar mantenimiento a máquinas eléctricas.</p>
+<h4>
+COMPETENCIAS PROFESIONALES</h4>
+
+<img src="img/electicidad1.JPG" width="80%">
+
+ 
+
+<h4>MAPA CURRICULAR</h4>
+
+<img src="img/electicidad2.JPG" width="80%">
+
+<h4>PERFIL DE EGRESO</h4>
+<p>
+Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Electricidad.</p>
+<ul align="left"><li>
+ Desarrolla instalaciones eléctricas residenciales y comerciales.</li><li>
+ Mantiene los motores y generadores de CA y CC.</li><li>
+ Mantiene en operación los circuitos de control electromagnético y electrónico.</li><li>
+ Mantiene los sistemas de iluminación y de energía renovable.</li><li>
+ Mantiene instalaciones eléctricas de media y baja tensión.</li></ul>
+ <h4>
+OPORTUNIDADES DE INSERCIÓN LABORAL.</h4>
+<p>
+Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales o las necesidades en su entorno social.</p>
+       </div>
+       </div>
+       <br>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes_cbtis/mecanicosinsta.jpg',1)"><img src="imagenes_cbtis/mecanicos.jpg" width="80%" id="Image17"></a>
+<div data-role="collapsible" data-content-theme="false" style="background-color:#06C;"><h2>
+       TÉCNICO EN MECÁNICA INDUSTRIAL</h2><div>
+<p>
+Profesionista que da mantenimiento a los sistemas de transmisión de potencia utilizando las máquinas herramientas convencionales, de control numérico, máquinas de soldar con arco eléctrico y oxigas auxiliándose de los procesos de ajuste de piezas mecánicas.</p>
+<h4>
+COMPETENCIAS PROFESIONALES</h4>
+
+<img src="img/mecanica1.jpg" width="80%">
+
+ <h4>
+
+MAPA CURRICULAR</h4>
+
+<img src="img/mecanica2.jpg" width="80%">
+<h4>
+PERFIL DE EGRESO</h4>
+<p>
+Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Mecánica Industrial:</p>
+<ul align="left"><li>
+ Suelda y ajusta piezas mecánicas.</li><li>
+ Maquina piezas mecánicas en talador y torno.</li><li>
+ Maquina piezas mecánicas en fresadora, rectificadora y cepillo.</li><li>
+ Maquina piezas mecánicas por CNC.</li><li>
+ Mantiene sistemas de transmisión de potencia.</li></ul>
+ <h4>
+OPORTUNIDADES DE INSERCIÓN LABORAL.</h4>
+<p>
+Industrias de transformación y procesos como: Textiles, del plástico, petroleras, metalmecánica, automotriz, pesqueras, mineras, siderúrgicas, agrícolas, alimenticia, química, de muebles, forestal, papelera, gráfica y en general todo tipo de industria de la producción y manufacturera que utilice maquinaria entre otras.</p>
+     </div></div>
+      <br>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes_cbtis/1.jpg',1)"><img src="imagenes_cbtis/logistica.jpg" width="80%" id="Image18"></a>
+<div data-role="collapsible" data-content-theme="false" style="background-color:#06C;">
+      <h2>
+       TÉCNICO EN LOGISTICA</h2>
+<div>
+<p>Ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas a la administración de bienes, planificando los suministros destinados al almacenamiento de manera manual y electrónica, la organización de los nodos logísticos para el transporte de mercancías, así como proveer los servicios y atención al cliente sobre los movimientos y los costos de la cadena logística.</p>
+<h4>
+COMPETENCIAS PROFESIONALES</h4>
+
+
+<img src="img/logistica1.jpg" width="80%">
+ 
+<h4>
+MAPA CURRICULAR</h4>
+
+<img src="img/logistica2.jpg" width="80%">
+
+<h4>
+PERFIL DE EGRESO</h4>
+<p>
+Durante el proceso de formación de los cinco módulos, el estudiante desarrollara o reforzará las siguientes competencias profesionales:</p>
+<ul align="left"><li>
+ Supervisa el proceso de suministrio de bienes.</li><li>
+ Apoya el proceso de administración al servicio de almacenaje de bienes.</li><li>
+ Organiza el transporte de mercancías. </li><li>
+Proveve servicio de atencion al cliente sbre los movimientos de logistica. Organiza los costos de la cadena logística y de las competencias de productividad y empleabilidad:</li><li>
+ Atencion al proceso</li><li>
+Planeación y organización</li><li>
+Ética profesional</li><li>
+Comunicación efectiva</li><li>
+Trabajo en equipo</li><li>
+Atención al cliente</li><li>
+Relaciones interpersonales</li></ul>
+   <h4>OPORTUNIDADES DE INSERCIÓN LABORAL</h4>
+<p>
+Nuestro país presenta una amplia diversidad de procesos de producción, desde los que utilizan tecnología moderna, hasta sistemas tradicionales; este hecho contribuye a diversificar las ocupaciones, los Comités interinstitucionales de Formación Profesional decidieron utilizar los siguientes: Sectores industriales, comerciales y de servicios, públicos o privados: Escuelas, constructoras, fábricas, centros comerciales, hospitales, inmobiliarias, hoteles, instituciones de crédito, despachos contables y tiendas de autoservicio. Autoempleo</p>
+</div>
+       </div>
+       <br>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes_cbtis/instprogramacion.jpg',1)"><img src="imagenes_cbtis/programacion3.jpg" width="80%" id="Image19"></a>
+<div data-role="collapsible" data-content-theme="false" style="background-color:#06C;">
+      <h2>TÉCNICO EN PROGRAMACIÓN</h2> <div>
+<p>
+Persona con conocimientos, habilidades y actitudes, capaz de ingresar a empresas de desarrollo de software, diseño gráfico, mantenimiento, outsourcing.</p>
+<h4>
+COMPETENCIAS PROFESIONALES</h4>
+
+<img src="imagenes_cbtis/programacion1.jpg" width="80%">
+
+ 
+<h4>
+MAPA CURRICULAR</h4>
+<img src="imagenes_cbtis/programacion2.jpg" width="80%">
+<h4>
+PERFIL DE EGRESO</h4>
+<p>
+La formación que ofrece la carrera de Técnico en programación permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:</p>
+<br><p>
+Instalación y desarrollo de software de aplicación utilizando programación estructurada y orientada a objetos en ambientes web y móviles, con almacenamiento persistente de datos.
+ Así como la configuración y administración de plataforma e-learning y Comercio electrónico.
+OPORTUNIDADES DE INSERCIÓN LABORAL.</p>
+<ul align="left">
+<li>
+ Desarrolladores de software</li><li>
+ Analistas de sistemas</li><li>
+Analista de programas de cómputo</li><li>
+ Programador de sistemas de cómputo</li><li>
+ Edición de software y edición de software integrada con la reproducción</li><li>
+ Escuelas de computación del sector privado</li><li>
+ Servicios de diseño de sistemas de cómputo y servicios relacionados</li><li>
+ Escuelas de computación del sector público</li></ul>
+          </div>
+         </div>
+       </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Proyecto final, MGMC</h4>
+        </div>
+      </div>
+     </div>
+     </div>
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>Actividades Extra escolares</h1>
+      </div>
+      <div data-role="content" align="center">
+      <p></p>
+<div>
+        <div data-role="collapsible" data-content-theme="false">
+        <h2>Culturales</h2>
+      <div>
+      <p>CBTis 16 ofrece distintas actividades culturales para los alumnos como:</p>
+      <ul align="left">
+      <li>TEATRO</li><li> BAILE</li><li> DANZA</li><li> AJEDREZ</li><li> DIBUJO</li><li> PINTURA</li><li> CARTEL</li><li> ORATORIA</li><li> FOTOGRAFÍA</li><li> ARTESANÍAS</li>
+      </ul>
+      </div>
+      </div>
+      <div data-role="collapsible" data-content-theme="false">
+        <h2>Deportivas</h2>
+        <div>
+         <p>CBTis 16 ofrece distintas actividades deportivas para los alumnos como:</p>
+      <ul align="left">
+      <li>Basquetball</li>
+      <li>futball</li>
+      <li>voliball</li>
+      <li>atletismo</li>
+      </ul>
+      </div>
+      </div>
+      
+      
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/act10.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="data1/images/act11.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="data1/images/act12.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="data1/images/act13.jpg" alt="" title="" id="wows1_3"/></li>
+		<li><img src="data1/images/actextra.jpg" alt="" title="" id="wows1_4"/></li>
+		<li><img src="data1/images/ajedrez.jpg" alt="" title="" id="wows1_5"/></li>
+		<li><img src="data1/images/ajedrez1.jpg" alt="" title="" id="wows1_6"/></li>
+		<li><img src="data1/images/banda_de_guerra.jpg" alt="" title="" id="wows1_7"/></li>
+		<li><img src="data1/images/banda_de_guerra2.jpg" alt="" title="" id="wows1_8"/></li>
+		<li><img src="data1/images/portada.jpg" alt="" title="" id="wows1_9"/></li>
+		<li><img src="data1/images/portada2.jpg" alt="" title="" id="wows1_10"/></li>
+		<li><img src="data1/images/act5.jpg" alt="" title="" id="wows1_11"/></li>
+		<li><img src="data1/images/act3.jpg" alt="" title="" id="wows1_12"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/act4.jpg" alt="bootstrap slider" title="" id="wows1_13"/></a></li>
+		<li><img src="data1/images/act7.jpg" alt="" title="" id="wows1_14"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data1/tooltips/act10.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/act11.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/act12.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/act13.jpg" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/actextra.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/ajedrez.jpg" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/ajedrez1.jpg" alt=""/>7</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/banda_de_guerra.jpg" alt=""/>8</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/banda_de_guerra2.jpg" alt=""/>9</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/portada.jpg" alt=""/>10</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/portada2.jpg" alt=""/>11</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/act5.jpg" alt=""/>12</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/act3.jpg" alt=""/>13</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/act4.jpg" alt=""/>14</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/act7.jpg" alt=""/>15</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+      
+      
+      
+      </div>
+      <div style="width:40%;" align="center">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+        <li class="ui-first-child ui-last-child">
+          <a href="https://es-la.facebook.com/pg/CBTIS16DIFUSIONCULTURAL/" target="_self"data-role="button" >
+            <h2>Facebook 1</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+          <a "href=https://www.facebook.com/cbtis16atlixco/"target="_self" data-role="button" >
+            <h2>Facebook 2</h2>
+          </a>
+        </li>
+      </ul>
+      </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Proyecto final, MGMC</h4>
+        </div>
+      </div>
+     </div>
+     </div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>Plan de estudios</h1>
+  </div>
+      <div data-role="content" align="center">
+        <p>
+        Está organizado en seis semestres e integrados por asignaturas y módulos que están distribuidos en tres componentes de formación: básica, propedéutica y profesional cubriendo un total de 2800 horas por semestre en 16 semanas y un trabajo promedio de 30 horas de trabajo académico por semana.</p><p>
+El componente de formación básica con 1200 horas: se articula con la educación básica y con la de tipo superior, aborda los conocimientos esenciales de la ciencia, la tecnología y las humanidades, aporta fundamentos a la formación propedéutica y a la profesional y está integrado por asignaturas.</p><p>
+Se distribuyen en cuatro campos de conocimiento, como son 1 Matemáticas, 2 Ciencias naturales, 3 Comunicación, 4 Humanidades, 5 Historia, sociedad y tecnología.</p><p>
+El componente de formación propedéutica con 480 horas: se articula con la educación superior, pone énfasis en una profundización de los conocimientos disciplinares que favorezca una mejor incorporación de los egresados a instituciones de ese tipo educativo y está integrado por asignaturas.</p><p>
+Se organiza en tres áreas que permiten la convergencia e integración de los saberes previamente adquiridos: Físico –matemática; Químico – biológica y Económico – administrativa. (Sus seis asignaturas se ubican en el 5º y 6º Semestres, tres de ellas son comunes para las tres áreas, dos más son específicas para cada área y la última es elegida por el estudiante de acuerdo con la oferta del plantel.</p><p>
+El componente de formación profesional con 1200 horas: es la formación tecnológica se da a partir del segundo semestre, te preparan como técnico del nivel medio superior, se organiza en carreras estructuradas en módulos para desarrollar las competencias profesionales correspondientes al campo de formación profesional de la carrera técnica elegida.
+        </p><img src="imagenes_cbtis/calendario.jpg" width="90%">
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes_cbtis/vision.jpg',1)"><img src="imagenes_cbtis/egresados.jpg" width="80%" id="Image14"></a>
+        <div data-role="collapsible" data-content-theme="false" style="background-color:#06C;">
+<h2> MISIÓN</h2>
+<div>
+<p>
+Formar personas con conocimientos tecnológicos en las áreas industrial, comercial y de servicios, a través de la preparación de profesionales técnicos y bachilleres, con el fin de contribuir al desarrollo sustentable del país.
+</p>
+ <img src="imagenes_cbtis/mision.jpg" width="80%">
+ </div>
+ </div>
+<div data-role="collapsible" data-content-theme="false" style="background-color:#06C;">
+<h2>VISIÓN</h2>
+<div>
+<p>
+Ser una institución que proporcione una formación integral y pertinente de acuerdo a las exigencias derivadas de la competitividad mundial y el entorno y vocación local, además de tener la flexibilidad para satisfacer los intereses, aspiraciones y posibilidades de la población que demanda este nivel educativo en nuestro plantel.</p>
+<img src="imagenes_cbtis/10.jpg" width="80%"></div></div>
+<div style="width:40%;" align="center">
+
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+        <li class="ui-first-child ui-last-child">
+          <a href="http://www.cbtis016.edu.mx/index.php/"target="_self" data-role="button" id="beep">
+            <h2>Mas...</h2>
+          </a>
+        </li>
+      </ul>
+      </div>
+      </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Proyecto final, MGMC</h4>
+        </div>
+      </div>
+     </div>
+      </div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>Instalaciones</h1>
+  </div>
+        <div data-role="content" align="center">
+        <p>CBTis 16 cuenta con unas instalaciones ejemplares donde se busca que el alumno se desarrolle y conviva en un ambiente sano, contamos con areas verdes, areas deportivas, aulas, laboratorios, oficinas, biblioteca entreo otras basicas.</p>
+        <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container3">
+<div class="ws_images"><ul>
+		<li><img src="data3/images/cancha_basquet_1.jpg" alt="" title="" id="wows3_0"/></li>
+		<li><img src="data3/images/cancha_basquet.jpg" alt="" title="" id="wows3_1"/></li>
+		<li><img src="data3/images/cancha_de_basquet.jpg" alt="" title="" id="wows3_2"/></li>
+		<li><img src="data3/images/cancha_rapida_2.jpg" alt="" title="" id="wows3_3"/></li>
+		<li><img src="data3/images/cancha_rapida.jpg" alt="" title="" id="wows3_4"/></li>
+		<li><img src="data3/images/cbtis_campo.jpg" alt="" title="" id="wows3_5"/></li>
+		<li><img src="data3/images/cbtis_campo2.jpg" alt="" title="" id="wows3_6"/></li>
+		<li><img src="data3/images/cbtis_electricidad.jpg" alt="" title="" id="wows3_7"/></li>
+		<li><img src="data3/images/cbtis_lab.jpg" alt="" title="" id="wows3_8"/></li>
+		<li><img src="data3/images/cbtis_lab2.jpg" alt="" title="" id="wows3_9"/></li>
+		<li><img src="data3/images/cbtis_mecanica.jpg" alt="" title="" id="wows3_10"/></li>
+		<li><a href="http://wowslider.net"><img src="data3/images/cbtis_programacion_2.jpg" alt="http://wowslider.net/" title="" id="wows3_11"/></a></li>
+		<li><img src="data3/images/cbtis_programacion.jpg" alt="" title="" id="wows3_12"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data3/tooltips/cancha_basquet_1.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cancha_basquet.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cancha_de_basquet.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cancha_rapida_2.jpg" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cancha_rapida.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cbtis_campo.jpg" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cbtis_campo2.jpg" alt=""/>7</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cbtis_electricidad.jpg" alt=""/>8</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cbtis_lab.jpg" alt=""/>9</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cbtis_lab2.jpg" alt=""/>10</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cbtis_mecanica.jpg" alt=""/>11</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cbtis_programacion_2.jpg" alt=""/>12</span></a>
+		<a href="#" title=""><span><img src="data3/tooltips/cbtis_programacion.jpg" alt=""/>13</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine3/wowslider.js"></script>
+<script type="text/javascript" src="engine3/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+      </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Proyecto final, MGMC</h4>
+        </div>
+      </div>
+     </div>
+     </div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>Ubicacion</h1>
+  </div>
+        <div data-role="content" align="center">
+        <img src="imagenes_cbtis/cbtis16.png" width="85%">
+        <p>recuerda que CBTis 16 estara encantado de resivirte en sus instalaciones y se puede comunicar al numero: 44 629 61</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4112432283578!2d-98.42502888165696!3d18.903275185569367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb47405555555%3A0x19bb49f598a8846f!2sCBTis+No+016!5e0!3m2!1ses!2smx!4v1496240198648" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Proyecto final, MGMC</h4>
+        </div>
+      </div>
+     </div>
+    </div>
+      <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>Perfil del egresado general</h1>
+  </div>
+        <div data-role="content" align="center">
+          <p>La enseñanza tecnológica que se imparte en el CBTis, tiene como finalidad formar bachilleratos técnicos que promuevan la producción de bienes y servicios logrando mayor eficiencia y aprovechamiento de los mismos.
+Esta carrera es bivalentes, es decir, se estudia el bachillerato y al mismo tiempo obtienes una especialidad técnica, permitiendo al alumn@ continuar con sus estudios superiores o bien integrarse al sector productivo de su comunidad.</p>
+<img src="imagenes_cbtis/festivalacademico.jpg" width="50%">
+<img src="imagenes_cbtis/evento6.jpg"width="40%">
+<img src="imagenes_cbtis/6.jpg"width="80%">
+         </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Proyecto final, MGMC</h4>
+        </div>
+      </div>
+     </div>
+     </div>
+     <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>Eventos</h1>
+  </div>
+        <div data-role="content" align="center">
+          <p>CBTis 16 participa en gran numero de eventos, driectivos y alumnos hacen que CBTis 16 destaque en cada uno de ellos siento una escuela inolvidable e invomparable</p>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/evento1.jpg" alt="" title="" id="wows2_0"/></li>
+		<li><img src="data2/images/evento3.jpg" alt="" title="" id="wows2_1"/></li>
+		<li><img src="data2/images/evento4.jpg" alt="" title="" id="wows2_2"/></li>
+		<li><img src="data2/images/evento5.jpg" alt="" title="" id="wows2_3"/></li>
+		<li><img src="data2/images/evento6.jpg" alt="" title="" id="wows2_4"/></li>
+		<li><img src="data2/images/evento7.jpg" alt="" title="" id="wows2_5"/></li>
+		<li><img src="data2/images/evento8.jpg" alt="" title="" id="wows2_6"/></li>
+		<li><img src="data2/images/evento9.jpg" alt="" title="" id="wows2_7"/></li>
+		<li><img src="data2/images/eventos.jpg" alt="" title="" id="wows2_8"/></li>
+		<li><img src="data2/images/festivalacademico.jpg" alt="" title="" id="wows2_9"/></li>
+		<li><img src="data2/images/futbool.jpg" alt="" title="" id="wows2_10"/></li>
+		<li><img src="data2/images/futbool2.jpg" alt="" title="" id="wows2_11"/></li>
+		<li><img src="data2/images/3.jpg" alt="" title="" id="wows2_12"/></li>
+		<li><img src="data2/images/4.jpg" alt="" title="" id="wows2_13"/></li>
+		<li><img src="data2/images/5.jpg" alt="" title="" id="wows2_14"/></li>
+		<li><a href="http://wowslider.net"><img src="data2/images/basquet.jpg" alt="jquery slider" title="" id="wows2_15"/></a></li>
+		<li><img src="data2/images/basquet2.jpg" alt="" title="" id="wows2_16"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data2/tooltips/evento1.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/evento3.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/evento4.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/evento5.jpg" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/evento6.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/evento7.jpg" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/evento8.jpg" alt=""/>7</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/evento9.jpg" alt=""/>8</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/eventos.jpg" alt=""/>9</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/festivalacademico.jpg" alt=""/>10</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/futbool.jpg" alt=""/>11</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/futbool2.jpg" alt=""/>12</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/3.jpg" alt=""/>13</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/4.jpg" alt=""/>14</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/5.jpg" alt=""/>15</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/basquet.jpg" alt=""/>16</span></a>
+		<a href="#" title=""><span><img src="data2/tooltips/basquet2.jpg" alt=""/>17</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<br><p>En los siguientes links puedes ver los 3 ultimos desfiles en los que CBTis 16 a participado</p>
+<div style="width:40%;" align="center">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+        <li class="ui-first-child ui-last-child">
+          <a href="https://www.facebook.com/canal80atlixco/videos/305875566499794/" target="_self"data-role="button" >
+            <h2>Desfile 1</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+          <a "https://www.youtube.com/watch?v=bYOOXuv_mQE"target="_self" data-role="button" >
+            <h2>Desfile 2</h2>
+          </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+          <a "https://www.youtube.com/watch?v=2XXEHYoO5V0"target="_self" data-role="button" >
+            <h2>Desfile 3</h2>
+          </a>
+        </li>
+      </ul>
+      </div>
+         </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Proyecto final, MGMC</h4>
+        </div>
+      </div>
+     </div>
+     </div>
+</body>
+</html>
