@@ -266,8 +266,8 @@
 	opacity:1; 
 }/* bottom center */
 #wowslider-container2  .ws_bullets {
-    bottom: 0px;
-	left:50%;
+	bottom: -1px;
+	left: 208px;
 }
 #wowslider-container2  .ws_bullets div{
 	left:-50%;
